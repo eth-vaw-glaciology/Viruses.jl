@@ -14,7 +14,7 @@ Output:
 - meltrate [mm/h]
 """
 function meltrate(temp, ddf)
-    if temp<0
+    if temp<=0
         # it's freezing, no melt
         0.0
     elseif temp>0
